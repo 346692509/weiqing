@@ -1,0 +1,36 @@
+<style>
+.footer {
+	margin: 0;
+	padding: 0;
+	min-height: 1px;
+	text-align: center;
+	line-height: 16px;
+	/*background-color: #f8f8f8;*/
+}
+.ft-copyright {
+	padding: 10px 0 10px;
+	margin: 0 15px;
+	font-size: 12px;
+}
+
+.ft-copyright img {
+	width: 110px;
+	display: block;
+	margin: 0 auto;
+}
+.ft-copyright a{
+	color: #ccc;
+}
+</style>
+<div class="footer">
+	<div class="copyright" id="bottom_copyright" style="display: none">
+		<div class="ft-copyright">
+			<img src="__TEMP__/{$style}/public/images/logo_copy.png" id="copyright_logo_wap">
+			<a href="javascript:;" target="_blank" id="copyright_companyname"></a>
+		</div>
+		{$web_info.third_count}
+	</div>
+	<div class="copyright" style="    text-align: center;">{if empty($_W['setting']['copyright']['footerleft'])}Powered by <a href="http://www.we7.cc"><b>微擎</b></a> v2.0.7 © 2014-2015 <a href="http://www.we7.cc">www.we7.cc</a>{else}{$_W['setting']['copyright']['footerleft']}{/if}</div>
+   {if !empty($_W['setting']['copyright']['icp'])}<div>备案号：<a href="http://www.miitbeian.gov.cn" target="_blank">{$_W['setting']['copyright']['icp']}</a></div>{/if}
+	
+</div>
